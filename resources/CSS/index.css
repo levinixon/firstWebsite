@@ -1,27 +1,27 @@
-#welcome {
-    background-color:  rgb(255, 255, 255);
-    display: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 480px;
-    width: 100%;
-    min-width: 100%;
-    position: static;
-    }
+html { 
+  box-sizing: border-box;
+  min-width: 100%;
+  scroll-behavior: smooth;
+}
     
     .title {
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 200px;
-    margin-top: 400px;
+    background-color:  rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: rgb(39, 35, 65);
     font-family: Montserrat, sans-serif;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 25px;
     text-align: left;
-    line-height: 50px;
-    justify-content: center;
+    line-height: 55px;
+    display: block;
+    height: 520px;
+    min-height: 100%;
+    position: static;
+    margin-top: 25%;
+    margin-left: 10%;
     }
     
     .title-name {
@@ -31,8 +31,7 @@
     .know-more {
     text-decoration: none;
     box-sizing: border-box;
-    width: 100%;
-    margin-left: 350px;
+    width: fit-content;
     color: rgb(39, 35, 65);
     font-family: Montserrat, sans-serif;
     font-weight: bold;
@@ -42,6 +41,9 @@
     transition-property: color;
     transition-duration: 750ms;
     transition-timing-function: ease;
+    display: block;
+    position: static;
+    margin-left: 15%;
     }
     
     .know-more:hover {
