@@ -95,7 +95,7 @@ body {
     @media only screen and (max-width: 768px) {
       width: 100%;
       height: 100%;
-      .title {
+      div.title {
         font-size: 5px;
       }
     }
