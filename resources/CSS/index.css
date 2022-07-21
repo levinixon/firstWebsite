@@ -111,14 +111,15 @@ nav {
     color: black;
     margin: 10px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer;;
   }
-  .apple-logo  {
+  .apple-logo {
+    margin: 10px;
     display: block;
     color: black;
-    margin: 10px;
     font-size: 20px;
     cursor: pointer;
+    position: relative;
   }
   .nav-links ul {
     padding: 30px;
