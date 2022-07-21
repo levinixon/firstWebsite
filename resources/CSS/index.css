@@ -78,7 +78,11 @@ nav {
   transition-duration: 1s;
 }
 
-nav.fa {
+.poo-logo  {
+  display: none;
+}
+
+.apple-logo  {
   display: none;
 }
 
@@ -95,19 +99,29 @@ nav.fa {
     height: 100vh;
     width: 200px;
     top: 0;
-    right: 0;
+    right: -200px;
     background: white;
     text-align: left;
     z-index: 2;
+    transition: 1s;
   }
-  .nav fa {
+  .poo-logo  {
     display: block;
     color: black;
     margin: 10px;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
   }
-
+  .apple-logo  {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
 
 }
 

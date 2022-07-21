@@ -14,8 +14,8 @@
     <body>
         <section class="header">
             <nav>
-                <div class="nav-links">
-                    <i class="fa-solid fa-poo"></i>
+                <div class="nav-links" id="navLinks">
+                    <div class="poo-logo"><i class="fa-solid fa-poo" onclick="hideMenu()"></i></div>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
@@ -23,7 +23,7 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <i class="fa-regular fa-apple-whole"></i>
+                <div class="apple-logo"><i class="fa-regular fa-apple-whole" onclick="showMenu()"></i></div>
             </nav>
             <div class="textbox">
                 <h1>Hi, i'm Levi Nixon</h1>
@@ -32,5 +32,17 @@
                 <a href="" class="textbox-button">Know More</a>
             </div>
         </section>
+<!----------JavaScript for toggle menu------------>
+        <script>
+            const navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+
+        </script>
     </body>
 </html>
