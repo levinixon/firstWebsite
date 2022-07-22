@@ -328,3 +328,13 @@ form button:hover{
   top: 10px;
   margin: 10px;
 }
+
+
+/*-----------Footer-----------*/
+
+.footer{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
