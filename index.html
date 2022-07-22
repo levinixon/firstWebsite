@@ -15,25 +15,27 @@
     </head>
     <body>
         <!-------Header---------------------------------------------------------------------------------->
-        <section class="header">
-            <nav>
-                <div class="nav-links" id="navLinks">
-                    <div class="poo-logo"><i class="fa-solid fa-poo" onclick="hideMenu()"></i></div>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="nav-links" id="navLinks">
+                        <div class="poo-logo"><i class="fa-solid fa-poo" onclick="hideMenu()"></i></div>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Portfolio</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    <div class="ellipsis-logo"><i class="fa-solid fa-ellipsis" onclick="showMenu()"></i></div>
+                </nav>
+                <div class="textbox">
+                    <h1>Hello, I'm Levi Nixon</h1>
+                    <p>I'm a software enginer based in the U.K</p>
+                    <a href="" class="textbox-button">Get In Touch</a>
                 </div>
-                <div class="ellipsis-logo"><i class="fa-solid fa-ellipsis" onclick="showMenu()"></i></div>
-            </nav>
-            <div class="textbox">
-                <h1>Hello, I'm Levi Nixon</h1>
-                <p>I'm a software enginer based in the U.K</p>
-                <a href="" class="textbox-button">Get In Touch</a>
             </div>
-        </section>
+        </div>
         <!--------About----------------------------------------------------------------------------------->
         <section class="about">
             <h1>About Me</h1>
@@ -94,7 +96,7 @@
                         <input type="text" name="Name" placeholder="Enter Your Name Here" required>
                         <input type="email" name="Email" placeholder="Enter Your Email Here" required>
                         <textarea name="Message" rows="6" placeholder="Please Enter Your Request Here And I'll Get Right Back To You"></textarea>
-                        <button type="submit" class="button2"> Let's Go!</button>
+                        <button type="submit" class="button">Let's Go!</button>
                     </form>
                 </div>
             </div>
