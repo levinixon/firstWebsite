@@ -121,6 +121,7 @@ nav {
     font-size: 20px;
     cursor: pointer;;
   }
+
   .ellipsis-logo {
     margin: 0 auto;
     display: block;
@@ -132,6 +133,8 @@ nav {
     padding-left: 300px;
     padding-top: 10px;
   }
+
+
   .nav-links ul {
     padding: 30px;
   }
