@@ -5,14 +5,16 @@
         <script src="https://kit.fontawesome.com/5e33dfd05e.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+        <link href= <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
     </head>
     <body>
-        <!-------Header---------->
+        <!-------Header---------------------------------------------------------------------------------->
         <section class="header">
             <nav>
                 <div class="nav-links" id="navLinks">
@@ -27,57 +29,81 @@
                 <div class="apple-logo"><i class="fa-regular fa-apple-whole" onclick="showMenu()"></i></div>
             </nav>
             <div class="textbox">
-                <h1>Hi, i'm Levi Nixon</h1>
-                <br>
-                <h1>Welcome to my Portfolio</h1>
-                <a href="" class="textbox-button">Know More</a>
+                <h1>Hello, I'm Levi Nixon</h1>
+                <p>I'm a software enginer based in the U.K</p>
+                <a href="" class="textbox-button">Get In Touch</a>
             </div>
         </section>
-        <!--------About--------------------------->
+        <!--------About----------------------------------------------------------------------------------->
         <section class="about">
             <h1>About Me</h1>
-            <p>Hello! My name is Levi and i'm a self-taught software engineer. My interest in software began when i graduated from university in 2018 with a bachelors of engineering, having loved computers and gaming since an early age i decided to focus on everything software!
+            <p>Hello! My name is Levi and I'm a software engineer specialising in ....... My love for tech and
+                 software began at an early age having been brought up around computers and gaming. After having 
+                 completed my bachelors of engineering (BEng) in 2018 i decided to specialise in everything software
+                 engineering!
             </p>
             <div class="row">
                 <div class="about-col">
-                    <h3>Something About Me</h3>
-                    <p>I need to write something about me in here</p>
+                    <h3>Programming Languages</h3>
+                    <p>I am currently proficient in HTML, CSS & JavaScript.</p>
                 </div>
                 <div class="about-col">
-                    <h3>Something About Me</h3>
-                    <p>I need to write something about me in here</p>
+                    <h3>Current Study</h3>
+                    <p>I am currently studying with CodeAcademy, specifically the full-stack software engineer path.</p>
                 </div>
                 <div class="about-col">
-                    <h3>Something About Me</h3>
-                    <p>I need to write something about me in here</p>
+                    <h3>Hobbies</h3>
+                    <p>In my spare time i like to read, surf, practice jiu-jitsu andspend time with my wife and cats.</p>
                 </div>
             </div>
         </section>
-        <!---------------Portfolio---------------->
+        <!---------------Portfolio------------------------------------------------------------------------>
         <section class="portfolio">
             <h1>Portfolio</h1>
             <p>Here is a selection of my latest work</p>
             <div class="row">
                 <div class="portfolio-col">
                     <img src="images/cat1.png" alt="">
-                    <h3>Cat 1</h3>
                     <p>This is my first project, blah blah blah</p>
                 </div>
                 <div class="portfolio-col">
                     <img src="images/cat2.png" alt="">
-                    <h3>Cat 2</h3>
                     <p>This is my second project, blah blah blah</p>
                 </div>
                 <div class="portfolio-col">
                     <img src="images/cat3.png" alt="">
-                    <h3>Cat 3</h3>
                     <p>This is my third project, blah blah blah</p>
                 </div>
             </div>
+        </section>
+        <!--------------Contact--------------------------------------------------------------------------->
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left"></div>
+                    <div class="contact-right"></div>
+                </div>
+            </div>
+            <h3>Contact</h3>
+            <p>levinixon12@gmail.com</p>
+            <p>+44 7311 798737</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Your Name Here">
+                </form>
+            </div>
+        </section>
+
 
 
         </section>
-<!----------JavaScript for toggle menu------------>
+<!----------JavaScript for toggle menu-------------------------------------------------------------------->
         <script>
             const navLinks = document.getElementById("navLinks")
             function showMenu(){
