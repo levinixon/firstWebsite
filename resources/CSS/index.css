@@ -91,7 +91,7 @@ nav {
   display: none;
 }
 
-.apple-logo  {
+.ellipsis-logo {
   display: none;
 }
 
@@ -121,7 +121,7 @@ nav {
     font-size: 20px;
     cursor: pointer;;
   }
-  .apple-logo {
+  .ellipsis-logo {
     margin: 0 auto;
     display: block;
     color: white;
