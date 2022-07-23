@@ -290,6 +290,11 @@ form button:hover{
   margin: 10px;
 }
 
+#message{
+  display: block;
+  margin-top: 20px;
+}
+
 
 /*-----------Footer-----------*/
 

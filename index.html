@@ -97,6 +97,7 @@
                         <textarea name="Message" rows="6" placeholder="Please Enter Your Request Here And I'll Get Right Back To You"></textarea>
                         <button type="submit" class="button" value="submit">Let's Go!</button>
                     </form>
+                    <span id="message"></span>
                 </div>
             </div>
         </div>
@@ -116,13 +117,20 @@
         </script>
 <!----------JavaScript for contact form-------------------------------------------------------------------->
 <script>
-    const scriptURL = '<https://script.google.com/macros/s/AKfycbzB9IlH1HUxA8gwLvAbuHymkx6_7gHX4_bBta-251r720g1prdkNRE5WnDGtJhktoP2/exec>'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby9-4g915aYkBtr7P9ZC77AriQEUrGrnzxXxs1Ir4TblqnzF1eMjavYnjHqcvqWOmJq/exec'
     const form = document.forms['submit-to-google-sheet']
+    const message = getElementById("message")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+            message.innerHTML = "Message sent, thank you!"
+        })
+        setTimeout(function(){
+            message.innerHTML = ""
+        },5000)
+        form.reset()
         .catch(error => console.error('Error!', error.message))
     })
   </script>
