@@ -5,7 +5,7 @@
         <script src="https://kit.fontawesome.com/5e33dfd05e.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href= <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
@@ -21,10 +21,10 @@
                     <div class="nav-links" id="navLinks">
                         <div class="poo-logo"><i class="fa-solid fa-poo" onclick="hideMenu()"></i></div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#header">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     <div class="ellipsis-logo"><i class="fa-solid fa-ellipsis" onclick="showMenu()"></i></div>
@@ -32,12 +32,12 @@
                 <div class="textbox">
                     <h1>Hello, I'm Levi Nixon</h1>
                     <p>I'm a software enginer based in the U.K</p>
-                    <a href="" class="textbox-button">Get In Touch</a>
+                    <a href="#contact" class="textbox-button">Get In Touch</a>
                 </div>
             </div>
         </div>
         <!--------About----------------------------------------------------------------------------------->
-        <section class="about">
+        <div class="about" id="about">
             <h1>About Me</h1>
             <p>Hello! My name is Levi and I'm a software engineer specialising in full stack development of mobile and web platforms. 
                 My love for tech and software began at an early age having been brought up around computers and gaming. After having 
@@ -57,9 +57,9 @@
                     <p>In my spare time i like to read, surf, practice jiu-jitsu and spend time with my wife and cats.</p>
                 </div>
             </div>
-        </section>
+        </div>
         <!---------------Portfolio------------------------------------------------------------------------>
-        <section class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <p>Here is a selection of my latest work</p>
             <div class="row">
@@ -76,7 +76,7 @@
                     <p>This is my third project</p>
                 </div>
             </div>
-        </section>
+        </div>
         <!--------------Contact--------------------------------------------------------------------------->
         <div class="contact" id="contact">
             <div class="row">
@@ -85,30 +85,25 @@
                     <p><i class="fa-solid fa-paper-plane"></i>levinixon12@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+44 7311 798737</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a class="button"href="">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name='submit-to-google-sheet'>
                         <input type="text" name="Name" placeholder="Enter Your Name Here" required>
                         <input type="email" name="Email" placeholder="Enter Your Email Here" required>
                         <textarea name="Message" rows="6" placeholder="Please Enter Your Request Here And I'll Get Right Back To You"></textarea>
-                        <button type="submit" class="button">Let's Go!</button>
+                        <button type="submit" class="button" value="submit">Let's Go!</button>
                     </form>
                 </div>
             </div>
         </div>
         <!--------------Footer--------------------------------------------------------------------------->
-        <div class="footer">
+        <div class="footer" id="footer">
             <p>Made by Levi Nixon - 2022 <i class="fa-solid fa-copyright"></i></p>
         </div>
-
-
-
-
-    </section>
 <!----------JavaScript for toggle menu-------------------------------------------------------------------->
         <script>
             const navLinks = document.getElementById("navLinks")
@@ -119,5 +114,17 @@
                 navLinks.style.right = "-200px";
             }
         </script>
+<!----------JavaScript for contact form-------------------------------------------------------------------->
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbzB9IlH1HUxA8gwLvAbuHymkx6_7gHX4_bBta-251r720g1prdkNRE5WnDGtJhktoP2/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     </body>
 </html>
