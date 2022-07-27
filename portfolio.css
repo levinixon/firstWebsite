@@ -138,6 +138,7 @@
   
     .counter h1 {
         font-size: 40px;
+        margin-top: 40px;
       }
       .counter span {
         font-size: 75px;
@@ -186,5 +187,13 @@
   
   .row {
     flex-direction: column;
-  }}
+  }
+
+  .counter button {
+    display: grid;
+    text-align: center;
+    position: relative;
+    margin: 20 auto;
+    
+  }
     
