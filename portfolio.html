@@ -38,7 +38,28 @@
                 <button class="btn decrease">Decrease</button>
                 <button class="btn reset">Reset</button>
                 <button class="btn increase">Increase</button>
-                </div>
+                
+                <p class="counter-paragraph">Welcome to my first successful JavaScript project! This counter project involved the introduction of
+                    querySelector, querySelectorAll & addEventListener. I was able to practice the creation of variables 
+                    such as 'let count = 0' & const value = document.querySelector("#value"), and also the creation of 
+                    conditional statements such as 'if' and 'else if' statements. Believe me, this project took far longer than
+                    the time it takes you to click to one hundred and back.
+                </p>
             </div>
+            </div>
+            <!--------------Footer--------------------------------------------------------------------------->
+        <div class="footer" id="footer">
+            <p>Made by Levi Nixon - 2022 <i class="fa-solid fa-copyright"></i></p>
+        </div>
           <!-------JavaScript---------------------------------------------------------------------------------->
           <script src="app.js"></script>
+          <!----------JavaScript for toggle menu-------------------------------------------------------------------->
+        <script>
+            const navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
