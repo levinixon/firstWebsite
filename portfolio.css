@@ -156,6 +156,14 @@
     display: inline;
     padding: 0;
 }
+
+.counter-paragraph {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
 .footer{
     margin-top: 20px;
 }
