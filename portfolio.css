@@ -156,9 +156,16 @@
     display: grid;
     text-align: center;
     position: relative;
-    margin: 20 auto;
-    
+    margin: 20 auto; 
   }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  
   .nav-links ul li a {
     padding: 0;
 
