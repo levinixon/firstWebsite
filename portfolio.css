@@ -159,15 +159,21 @@
     margin: 20 auto; 
   }
 
+  .nav-links{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    background: grey;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
   .nav-links ul {
     padding: 30px;
   }
   .nav-links ul li {
     display: block;
-  }
-  
-  .nav-links ul li a {
-    padding: 0;
-
-
-}}
+  }}
