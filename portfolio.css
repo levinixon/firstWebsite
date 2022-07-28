@@ -158,3 +158,11 @@
     position: relative;
     margin: 20 auto; 
   }
+  .nav-links ul li {
+    display: inline;
+    padding: 0;
+
+
+}
+
+}
