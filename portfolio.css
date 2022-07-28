@@ -167,10 +167,9 @@
     right: 0px;
     background: grey;
     text-align: left;
-    z-index: 2;
+    z-index: 0;
     transition: 1s;
   }
-
   .nav-links ul {
     padding: 30px;
   }
