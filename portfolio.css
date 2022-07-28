@@ -137,39 +137,8 @@
       .counter span {
         font-size: 75px;
       }
-  
-    .button {
-      margin-bottom: 50px;
-        }
-  
-  .row {
-    flex-direction: column;
-  }
-
-  .counter button {
-    display: grid;
-    text-align: center;
-    position: relative;
-    margin: 20 auto; 
-  }
-  .nav-links ul li {
-    display: inline;
-    padding: 0;
-}
-
-.counter-paragraph {
-    display: inline-block;
-    padding: 10px 0;
-    margin: 20px auto;
-    text-align: center;
-    position: relative;
-}
-.footer{
-    display: inline-block;
-    padding: 10px 0;
-    margin-top: 20px;
-    text-align: center;
-    position: relative;
-}
-
+      .counter button {
+        display: inline-block;
+        text-align: center;
+      }
 }
