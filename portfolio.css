@@ -88,7 +88,7 @@
         color: white;
         font-size: 18px;
         padding: 10px;
-        margin: 10px 20px;
+        margin: 0 10px;
         justify-content: space-between;
         border: 2px solid white;
         cursor: pointer;
@@ -114,10 +114,12 @@
       /*-----------Footer-----------*/
 
 .footer{
+    position: relative;
+    display: inline-block;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
+    padding: 0;
   }
 
 
