@@ -138,7 +138,8 @@
         font-size: 75px;
       }
       .counter button {
-        display: inline-block;
+        display: grid;
         text-align: center;
+        margin: 10 auto;
       }
 }
