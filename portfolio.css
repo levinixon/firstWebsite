@@ -109,19 +109,18 @@
         width: 90%;
         padding-top: 40px;
         margin: 0 auto;
+        font-size: 16px;
       }
 
       /*-----------Footer-----------*/
 
 .footer{
-    position: relative;
-    display: inline-block;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 0;
+    padding: 10px;
+    font-size: 16px;
   }
-
 
   /*-----------Media-----------*/
 
