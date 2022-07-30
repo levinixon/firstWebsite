@@ -176,6 +176,7 @@ h3{
   height: 300px;
   display: block;
   border-radius: 30px;
+  background: transparent;
 }
 
 .portfolio p {
