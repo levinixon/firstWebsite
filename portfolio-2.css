@@ -76,7 +76,7 @@ main {
   }
 
   .review {
-    width: 33%;
+    min-width: 33%;
     background: none;
     padding: 20px;
     margin: 0 auto;
@@ -215,6 +215,17 @@ main {
 
 .row {
   flex-direction: column;
-}}
+}
+
+.title h1 {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.review {
+
+}
+
+}
 
 
