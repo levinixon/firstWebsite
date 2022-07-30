@@ -177,7 +177,19 @@
 
 .row {
   flex-direction: column;
-}}
+}
+
+.container1 {
+  width: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+}
 
 
 
