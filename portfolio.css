@@ -118,7 +118,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        line-height: 200px;
+        padding-bottom: 10px;
       }
 
   /*-----------Media-----------*/
