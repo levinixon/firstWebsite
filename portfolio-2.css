@@ -140,6 +140,15 @@ main {
     cursor: pointer;
   }
 
+  .poo-logo  {
+    display: none;
+  }
+  
+  .ellipsis-logo {
+  
+    display: none;
+  }
+
   /*-----------Final Text----------*/
 
   .paragraph {
