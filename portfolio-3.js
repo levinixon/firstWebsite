@@ -12,7 +12,7 @@
                }
            });
    
-           question.classList.toggle("show-text");
+           const toggle = question.classList.toggle("show-text");
        });
    });
 
