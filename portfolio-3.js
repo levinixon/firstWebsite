@@ -5,7 +5,7 @@
 
    btns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
-        console.log(e.currentTarget.parentElement);
+        console.log(e.currentTarget.parentElement.parentElement);
     });
    });
 
