@@ -1,19 +1,12 @@
 
    //Javascript for Questions Page
 
-   const questions = document.querySelectorAll(".question");
+   const btns = document.querySelectorAll(".question-btn");
 
-   questions.forEach(function (question) {
-       const btn = question.querySelector(".question-btn");
-       btn.addEventListener("click", function () {
-           questions.forEach(function (item) {
-               if (item !=+ question) {
-                   item.classList.remove("show-text");
-               }
-           });
-   
-           const toggle = question.classList.toggle("show-text");
-       });
+   btns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        console.log(e.currentTarget);
+    });
    });
 
 
