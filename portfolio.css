@@ -188,4 +188,9 @@
     
     .row {
       flex-direction: column;
+    }
+  
+    .footer {
+      margin-top: 0px;
+
     }}

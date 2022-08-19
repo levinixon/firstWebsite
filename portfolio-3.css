@@ -108,11 +108,13 @@ main {
   align-items: center;
   text-transform: capitalize;
   padding-bottom: 1rem;
+  text-align: center;
 }
 .question-title p {
   margin-bottom: 0;
   letter-spacing: var(--spacing);
   color: var(--clr-grey-1);
+  text-align: center;
 }
 .question-btn {
   font-size: 1.5rem;
@@ -237,8 +239,4 @@ width: 100%;
 
 .paragraph {
 margin-top: 50px;
-}
-
-.question-title{
-  text-align: center;
 }}
