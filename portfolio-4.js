@@ -19,7 +19,7 @@ if (sum <= 20) {
 } else (sum > 21) {
     message = "Oh no! You've lost..."
     isAlive = false 
-}
+};
 
   // JavaScript for toggle menu
 
