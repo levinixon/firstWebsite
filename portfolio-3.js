@@ -10,8 +10,6 @@
     });
    });
 
-
-
    // JavaScript for toggle menu
 
 const navLinks = document.getElementById("navLinks")
