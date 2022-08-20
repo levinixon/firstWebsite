@@ -6,20 +6,37 @@ let sum = firstCard + secondCard;
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
+let messageEl = document.getElementById("message-el");
+let sumEl = document.getElementById("sum-el");
+let cardsEl = document.getElementById("cards-el");
 
 let suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds'];
 let hand = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace'];
 
 
-if (sum <= 20) {
-    message = "Do you want to draw a new card?"
-} else if (sum === 21) {
-    message = "Woohoo! You've got Blackjack!"
-    hasBlackjack = true
-} else (sum > 21) {
-    message = "Oh no! You've lost..."
-    isAlive = false 
-};
+function startGame(){
+    sumEl.textContent = "Sum: " + sum;
+    cardsEl.textContent = "Cards: " + firstCard + "+" + secondCard;
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?";
+    } else if (sum === 21) {
+        message = "Woohoo! You've got Blackjack!";
+        hasBlackjack = true
+    } else (sum > 21) {
+        message = "Oh no! You've lost...";
+        isAlive = false 
+    };    
+}
+
+messageEl.textContent = message;
+
+
+
+
+
+
+
+
 
   // JavaScript for toggle menu
 
