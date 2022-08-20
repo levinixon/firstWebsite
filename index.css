@@ -287,6 +287,12 @@ form button:hover{
   margin: 10px;
 }
 
+.button:hover{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-duration: 1s;
+}
+
 #message{
   display: block;
   margin-top: 20px;
