@@ -12,16 +12,18 @@ let cardsEl = document.getElementById("cards-el");
 
 function startGame(){
     sumEl.textContent = "Sum: " + sum;
-    cardsEl.textContent = "Cards: " + firstCard + "+" + secondCard;
+    cardsEl.textContent = "Cards: " + firstCard + " + " + secondCard;
     if (sum < 20) {
         message = "Do you want to draw a new card?";
     } else if (sum === 21) {
         message = "Woohoo! You've got Blackjack!";
         hasBlackjack = true
-    } else (sum > 21)
+    } else if (sum > 21) {
         message = "Oh no! You've lost...";
         isAlive = false; 
+    }
     messageEl.textContent = message;
+
 };  
 
 function newCard(){
