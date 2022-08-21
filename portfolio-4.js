@@ -18,12 +18,12 @@ function startGame(){
     } else if (sum === 21) {
         message = "Woohoo! You've got Blackjack!";
         hasBlackjack = true
-    } else (sum > 21) {
+    } else (sum > 21)
         message = "Oh no! You've lost...";
         isAlive = false; 
-    };    
     messageEl.textContent = message;
-}
+};  
+
 
 function newCard(){
     console.log("Drawing a new card from the deck.")
