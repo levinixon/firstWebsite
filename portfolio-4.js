@@ -13,7 +13,7 @@ let cardsEl = document.getElementById("cards-el");
 function startGame(){
     sumEl.textContent = "Sum: " + sum;
     cardsEl.textContent = "Cards: " + firstCard + "+" + secondCard;
-    if (sum <= 20) {
+    if (sum < 20) {
         message = "Do you want to draw a new card?";
     } else if (sum === 21) {
         message = "Woohoo! You've got Blackjack!";
@@ -23,7 +23,6 @@ function startGame(){
         isAlive = false; 
     messageEl.textContent = message;
 };  
-
 
 function newCard(){
     console.log("Drawing a new card from the deck.")
