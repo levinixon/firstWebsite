@@ -95,7 +95,7 @@ main {
   }
 
   .startButton, .newCardButton  {
-    display: inline-block;
+    display: inline;
     background: transparent;
     color: white;
     font-size: 18px;

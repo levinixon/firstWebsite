@@ -13,7 +13,6 @@ let cardsEl = document.getElementById("cards-el");
 let suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds'];
 let hand = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace'];
 
-
 function startGame(){
     sumEl.textContent = "Sum: " + sum;
     cardsEl.textContent = "Cards: " + firstCard + "+" + secondCard;
@@ -29,6 +28,20 @@ function startGame(){
 }
 
 messageEl.textContent = message;
+
+function newCard(){
+    console.log("Drawing a new card from the deck.")
+    let card = 8;
+    sum += card;
+    startGame();
+};
+
+
+
+
+
+
+
 
 
 
