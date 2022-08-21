@@ -87,7 +87,7 @@ main {
     /*-----------Main-----------*/
 
   .button-container {
-    width: 90%;
+    width: 100%;
     color: white;
     position: absolute;
     text-align: center;
@@ -95,10 +95,6 @@ main {
   }
 
   .startButton, .newCardButton  {
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    list-style: none;
     display: inline-block;
     background: transparent;
     color: white;
