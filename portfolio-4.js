@@ -10,9 +10,6 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-let suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds'];
-let hand = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace'];
-
 function startGame(){
     sumEl.textContent = "Sum: " + sum;
     cardsEl.textContent = "Cards: " + firstCard + "+" + secondCard;
@@ -23,11 +20,10 @@ function startGame(){
         hasBlackjack = true
     } else (sum > 21) {
         message = "Oh no! You've lost...";
-        isAlive = false 
+        isAlive = false; 
     };    
+    messageEl.textContent = message;
 }
-
-messageEl.textContent = message;
 
 function newCard(){
     console.log("Drawing a new card from the deck.")
