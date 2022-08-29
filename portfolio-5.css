@@ -3,6 +3,8 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    background-color: grey;
+    color: white;
   }
   
   html{
@@ -13,9 +15,10 @@
     background-color: grey;
     color: white;
   }
-   /*-----------Nav-----------*/
 
-  #header {
+/*-----------Nav-----------*/
+
+#header {
     min-height: 100vh;
     width: 100%;
     background-position: center;
@@ -23,7 +26,7 @@
     background-position: relative;
   }
   
-  .container{
+  .container {
     padding: 3% 6%;
   }
   
@@ -42,7 +45,6 @@
   .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 10px 12px;
     position: relative;
   }
   
@@ -59,95 +61,64 @@
     }
 
     .poo-logo  {
-        display: none;
-      }
-      
-      .ellipsis-logo {
-      
-        display: none;
-      }
+      display: none;
+    }
+    
+    .ellipsis-logo {
+      display: none;
+    }
 
-    /*-----------Title-----------*/
 
-main {
-    place-items: center;
+  /*-----------Main-----------*/
+
+  .container1 {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 2%;
   }
-       
-.title {
-    color: white;
+
+  .title {
+    margin: 0 auto;
+    position: relative;
     text-align: center;
   }
-  
-  .title h1 {
+
+  .title h1{
     font-size: 50px;
-    margin-top: 30px;
     padding-bottom: 30px;
   }
 
-  .title h2 {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .title h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-
-    /*-----------Main-----------*/
-
-  .button-container {
-    width: 100%;
+  .textbox-button {
+    display: inline-block;
+    text-decoration: none;
     color: white;
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-
-  .startButton, .newCardButton  {
-    display: inline;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 13px;
     background: transparent;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    margin: 0 10px;
-    justify-content: space-between;
-    border: 2px solid white;
+    position: relative;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    top: 10px;
+  }
+  
+  .textbox-button:hover{
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
     transition-duration: 1s;
   }
 
-  .startButton:hover, .newCardButton:hover{
-    border-color: black;
-    opacity: 0.5;
-  }
+/*-----------Footer-----------*/
 
-  /*-----------Final Text----------*/
+.footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 120px;
+}
 
-  .paragraph {
-    display: block;
-    position: relative;
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 120px;
-    text-align: center;
-  }
-
-    /*-----------Footer-----------*/
-
-    .footer {
-      display: block;
-      width: 100%;
-      text-align: center;
-      padding-bottom: 10px;
-      padding-top: 140px;
-    }
-
-/*-----------Media-----------*/
+  /*-----------Media-----------*/
 
 @media only screen and (max-width: 600px) {
   .header {
@@ -203,12 +174,8 @@ main {
   flex-direction: column;
 }
 
-.title h1 {
-  font-size: 35px;
-  margin-top: 0;
 }
 
-.paragraph {
-margin-top: -50px;
-}}
+
+
 

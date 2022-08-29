@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+        <link href="./portfolio-5.css" type="text/css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5e33dfd05e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mixed Messages</title>
+        <!-------Header---------------------------------------------------------------------------------->
+        <head>
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <div class="nav-links" id="navLinks">
+                            <div class="poo-logo"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="ellipsis-logo"><i class="fa-solid fa-ellipsis" onclick="showMenu()"></i></div>
+                    </nav>
+                </div>
+        </head>
+        <!-------Main---------------------------------------------------------------------------------->
+        <body>
+            <div class="container1">
+                <div class="title">
+                    <h1>Mixed Messages</h1>
+                    <a href="#contact" class="textbox-button">Generate Random Message!</a>
+                </div>
+            </div>
+                    <!--------------Footer--------------------------------------------------------------------------->
+            <div class="footer" id="footer">
+                <p>Made by Levi Nixon - 2022 <i class="fa-solid fa-copyright"></i></p>
+            </div>
+        <!----------JavaScript for toggle menu-------------------------------------------------------------------->
+        <script>
+            const navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        </body>
+</html>

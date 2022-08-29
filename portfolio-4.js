@@ -8,13 +8,6 @@ let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
-let balanceEl = document.getElementById("balance-el");
-
-let balance = {
-    chips: 0
-};
-
-balanceEl.textContent = "Remaining Balance: " + balance.chips;
 
 function getRandomCard(){
 let randomNumber = Math.floor(Math.random() * 13) + 1
