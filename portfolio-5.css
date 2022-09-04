@@ -72,9 +72,22 @@
   /*-----------Main-----------*/
 
   .container1 {
-    width: 100%;
-    padding-left: 4%;
-    padding-right: 2%;
+    position: relative;
+    min-width: 33%;
+    width: 75%;
+    background: none;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    transition-duration: 1s;
+    text-align: center;
+  }
+  .container1:hover {
+    box-shadow: var(--dark-shadow);
   }
 
   .title {
@@ -88,7 +101,21 @@
     padding-bottom: 30px;
   }
 
-  .textbox-button {
+  .quote-text {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .quote-author {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .quote-button {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -102,20 +129,31 @@
     top: 10px;
   }
   
-  .textbox-button:hover{
+  .quote-button:hover{
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.2);
     transition-duration: 1s;
   }
 
+/*-----------Final Paragraph-----------*/
+  .paragraph {
+    display: block;
+    position: relative;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
 /*-----------Footer-----------*/
 
 .footer {
-  display: block;
+  display: inline;
+  position: fixed;
   width: 100%;
   text-align: center;
-  padding-bottom: 10px;
-  margin-top: 120px;
+  margin: 0 auto;
+  padding-top: 120px;
 }
 
   /*-----------Media-----------*/

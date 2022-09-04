@@ -28,25 +28,28 @@
         </head>
         <!-------Main---------------------------------------------------------------------------------->
         <body>
+            <div class="title">
+            <h1>Random Quote Generator</h1>
             <div class="container1">
-                <div class="title">
-                    <h1>Mixed Messages</h1>
-                    <a href="#contact" class="textbox-button">Generate Random Message!</a>
+                    <h2 class="quote-text" id="quote-text">Text</h2>
+                    <h2 class="quote-author" id="quote-author">Author</h2>
+                    <a href="#contact" class="quote-button" onclick="getRandomQuote()">Generate Random Message!</a>
                 </div>
             </div>
-                    <!--------------Footer--------------------------------------------------------------------------->
+            <!-------Paragraph---------------------------------------------------------------------------------->
+            <div class="paragraph-container">
+                <p class="paragraph">Okay, things got a little confusing here. I kind of jumped ahead slightly and got my head
+                    stuck into some API's. I had to figure out how to fetch the API, push it into an array and then call from 
+                    that array randomly. I'm not totally sure how i got this to work, but it works so i'm leaving it alone. I 
+                    learned how to use promises, which are the basis of asynchronous programming within JavaScript. I expect i'll
+                    have to a deeper dive here and understand how to catch errors and all that complicated stuff!!
+                    </p>
+                    </div>
+                          <!--------------Footer--------------------------------------------------------------------------->
             <div class="footer" id="footer">
                 <p>Made by Levi Nixon - 2022 <i class="fa-solid fa-copyright"></i></p>
             </div>
-        <!----------JavaScript for toggle menu-------------------------------------------------------------------->
-        <script>
-            const navLinks = document.getElementById("navLinks")
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
-        </script>
+        <!----------JavaScript-------------------------------------------------------------------->
+        <script src="portfolio-5.js"></script
         </body>
 </html>
