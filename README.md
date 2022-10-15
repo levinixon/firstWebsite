@@ -5,5 +5,5 @@
 
 The main purpose of this website is to present a portfolio of projects across a variety of different programming languages, growing in difficulty as a familiarise myself with coding. 
 
-There isn't really much else to it, there are now problems being solved, other than small vanilla projects for the moment.
+Happy reviewing and drop me a message if you have any questions!
  
